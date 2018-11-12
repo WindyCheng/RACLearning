@@ -6,7 +6,7 @@ target 'RAC常用用法总结' do
   # use_frameworks!
 
   # Pods for RAC常用用法总结
-  #pod 'ReactiveCocoa', '~> 2.5'
-  #pod 'AFNetworking'
+  pod 'ReactiveCocoa', '~> 2.5'
+  pod 'AFNetworking'
 
 end
