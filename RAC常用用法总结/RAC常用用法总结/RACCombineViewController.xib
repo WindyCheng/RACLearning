@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RACCombineViewController">
+            <connections>
+                <outlet property="accountField" destination="7oh-82-Ajn" id="fhp-cC-mY6"/>
+                <outlet property="loginBtn" destination="bHV-Vf-ALN" id="q1Q-7d-Job"/>
+                <outlet property="pwdField" destination="5Yg-2L-Vx3" id="ocs-BO-C95"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Yg-2L-Vx3">
+                    <rect key="frame" x="20" y="318.5" width="335" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="JQk-X5-dZh"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-82-Ajn">
+                    <rect key="frame" x="20" y="238.5" width="335" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="dif-K9-40t"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-Vf-ALN">
+                    <rect key="frame" x="50" y="398.5" width="275" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AHr-QA-Q5e"/>
+                    </constraints>
+                    <state key="normal" title="loginButton">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7oh-82-Ajn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="0Kf-pE-HL6"/>
+                <constraint firstItem="5Yg-2L-Vx3" firstAttribute="top" secondItem="7oh-82-Ajn" secondAttribute="bottom" constant="50" id="Fp0-SK-Pfa"/>
+                <constraint firstItem="5Yg-2L-Vx3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Gzs-hX-yWN"/>
+                <constraint firstItem="5Yg-2L-Vx3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Yct-es-Sba"/>
+                <constraint firstItem="5Yg-2L-Vx3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fMx-AT-SzS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5Yg-2L-Vx3" secondAttribute="trailing" constant="20" id="ieR-Ba-ZPL"/>
+                <constraint firstItem="bHV-Vf-ALN" firstAttribute="top" secondItem="5Yg-2L-Vx3" secondAttribute="bottom" constant="50" id="pj8-Rg-gyc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bHV-Vf-ALN" secondAttribute="trailing" constant="50" id="tyG-v3-QOo"/>
+                <constraint firstItem="bHV-Vf-ALN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="uzJ-v6-FO3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7oh-82-Ajn" secondAttribute="trailing" constant="20" id="yM4-NV-qov"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
